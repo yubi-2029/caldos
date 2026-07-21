@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ================================
+   RESET GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color:  #f5f5f5;
+    color: #0e0e0e;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+/* ================================
+   HEADER
+================================ */
+
+
+header {
+
+    background-image: url(imagenes/encabezado.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 750px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+
+/* ================================
+   MENU
+================================ */
+
+
+.menu {
+
+    position: absolute;
+
+    top: 20px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.navbar ul {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+
+.navbar ul li a {
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 15px;
+
+    display: block;
+
+    transition: .3s;
+
+}
+
+
+
+.navbar ul li a:hover {
+
+    color: #8e3c0c;
+
+}
+
+
+
+#menu {
+
+    display: none;
+
+}
+
+
+
+.menu label {
+
+    display: none;
+
+    cursor: pointer;
+
+}
+
+
+
+.menu-icono {
+
+    width: 30px;
+
+}
+
+
+
+/* ================================
+   CONTENIDO PRINCIPAL HEADER
+================================ */
+
+
+.header-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+
+.header-content img {
+
+    width: 420px;
+
+}
+
+
+
+.content {
+
+    padding-right: 100px;
+
+}
+
+
+
+.content h1 {
+
+    color: white;
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+
+}
+
+
+
+.content p {
+
+    margin-top: 25px;
+
+    color: white;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ================================
+   BOTONES
+================================ */
+
+
+.btn-1 {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    margin-right: 10px;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    color: white;
+
+    background-color: #8e3c0c;
+
+    border: 1px solid #b97a55;
+
+    transition: .3s;
+
+}
+
+
+
+.btn-1:hover {
+
+    background-color: #b97a55;
+    border: 1px solid #8e3c0c;
+
+}
+
+
+
+.btn-2 {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    color: white;
+
+    background-color: #8e3c0c;
+
+    transition: .3s;
+
+}
+
+
+
+.btn-2:hover {
+
+    background-color: #441d06;
+
+}
+
+
+
+
+/* ================================
+   SERVICIOS
+================================ */
+
+
+.services {
+
+    padding: 80px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+
+    text-align: center;
+
+}
+
+
+
+.service {
+
+    background-color: #ffffff;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 
+    0 0 20px #8e3c0ca2;
+
+    transition: .3s;
+
+}
+
+
+
+.service:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
+.service img {
+
+    width: 70px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.service h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.service p {
+
+    color: #525254;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+/* ================================
+   PORTAFOLIO
+================================ */
+
+
+.portfolio-section {
+
+    padding: 80px 0;
+
+}
+
+
+
+.portfolio-section h2 {
+
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 60px;
+
+}
+
+
+
+.portfolio-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 80px;
+
+    margin-bottom: 80px;
+
+}
+
+
+
+.portfolio-item img {
+
+    width: 350px;
+
+}
+
+
+
+.portfolio-text {
+
+    flex: 1;
+
+}
+
+
+
+.portfolio-text h3 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.portfolio-text p {
+
+    color: #525254;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.reverse {
+
+    flex-direction: row-reverse;
+
+}
+/* ================================
+   FOOTER
+================================ */
+
+
+footer {
+
+    padding: 180px 0 40px;
+
+    background-image: url(imagenes/footer.png);
+
+    background-position: top center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+
+
+.info-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+
+
+.info-price {
+
+    background-color: #f5f5f5;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 25px #8e3c0c40;
+
+    max-width: 350px;
+
+}
+
+
+
+.info-price h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.price {
+
+    font-size: 45px;
+
+    font-weight: 700;
+
+    color: #8e3c0c;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.info-price p {
+
+    color: #525254;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+.info-txt {
+
+    color: white;
+
+    max-width: 500px;
+
+}
+
+
+
+.info-txt h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.info-txt p {
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+hr {
+
+    margin: 50px 0;
+
+    border: 0;
+
+    border-top: 1px solid #8e3c0c;
+
+}
+
+
+
+.enlaces {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: white;
+
+}
+
+
+
+.enlaces h3 {
+
+    font-size: 28px;
+
+}
+
+
+
+.enlace ul {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+
+.enlace a {
+
+    color: white;
+
+    transition: .3s;
+
+}
+
+
+
+.enlace a:hover {
+
+    color: #542307;
+
+}
+
+
+
+
+
+/* ================================
+   TABLET
+================================ */
+
+
+
+@media(max-width:991px) {
+
+
+
+    .container {
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+
+    }
+
+
+
+    /* MENU MOVIL */
+
+
+    .menu {
+
+        padding: 20px 30px;
+
+    }
+
+
+
+    .menu label {
+
+        display: block;
+
+    }
+
+
+
+    .navbar {
+
+        position: absolute;
+
+        top: 80px;
+
+        left: 0;
+
+        right: 0;
+
+        background-color:  #542307a8;
+
+        display: none;
+
+    }
+
+
+
+    .navbar ul {
+
+        flex-direction: column;
+
+        gap: 0;
+
+    }
+
+
+
+    .navbar ul li a {
+
+        text-align: center;
+
+        padding: 20px;
+
+    }
+
+
+
+    #menu:checked ~ .navbar {
+
+        display: block;
+
+    }
+
+
+
+
+    /* HEADER */
+
+
+    header {
+
+        min-height: 900px;
+
+    }
+
+
+
+    .header-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 100px;
+
+    }
+
+
+
+    .content {
+
+        padding: 0;
+
+    }
+
+
+
+    .content h1 {
+
+        font-size: 45px;
+
+    }
+
+
+
+    .content p {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .header-content img {
+
+        width: 250px;
+
+        margin-top: 40px;
+
+    }
+
+
+
+
+    /* SERVICIOS */
+
+
+    .services {
+
+        grid-template-columns: repeat(2,1fr);
+
+        padding-top: 50px;
+
+    }
+
+
+
+
+
+    /* PORTAFOLIO */
+
+
+    .portfolio-item,
+
+    .reverse {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+
+    }
+
+
+
+    .portfolio-item img {
+
+        width: 280px;
+
+    }
+
+
+
+    .portfolio-section h2 {
+
+        font-size: 40px;
+
+    }
+
+
+
+    .portfolio-text h3 {
+
+        font-size: 30px;
+
+    }
+
+
+
+
+
+    /* FOOTER */
+
+
+    .info-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+
+    .info-price {
+
+        max-width: 100%;
+
+    }
+
+
+
+    .info-txt {
+
+        max-width: 100%;
+
+    }
+
+
+
+    .enlaces {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* ================================
+   CELULARES
+================================ */
+
+
+
+@media(max-width:600px) {
+
+
+
+    .logo {
+
+        font-size: 20px;
+
+    }
+
+
+
+    header {
+
+        min-height: 800px;
+
+    }
+
+
+
+    .content h1 {
+
+        font-size: 35px;
+
+    }
+
+
+
+    .content p {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .btn-1 {
+
+        display: block;
+
+        margin-right: 0;
+
+    }
+
+
+
+    .services {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .portfolio-section {
+
+        padding: 50px 0;
+
+    }
+
+
+
+    .portfolio-section h2 {
+
+        font-size: 32px;
+
+    }
+
+
+
+    .portfolio-text h3 {
+
+        font-size: 25px;
+
+    }
+
+
+
+    footer {
+
+        padding-top: 100px;
+
+    }
+
+
+
+    .enlace ul {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+
+}
